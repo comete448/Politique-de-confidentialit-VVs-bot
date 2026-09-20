@@ -1,141 +1,319 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Politique de confidentialité — Virtual Vibes</title>
-<style>
-:root{--bg:#090a12;--panel:#111322;--panel2:#17192b;--line:#292d49;--ink:#f5f5ff;--muted:#8b90ac;--violet:#9a7cff;--green:#60f2ba;--yellow:#ffd166;--shadow:0 18px 60px #0008}
-*{box-sizing:border-box}
-html{background:var(--bg);scroll-behavior:smooth}
-body{margin:0;color:var(--ink);font:15px/1.65 "Trebuchet MS",system-ui,sans-serif;background:radial-gradient(circle at 8% 0%,#251d4a 0,transparent 30rem),radial-gradient(circle at 100% 20%,#0c3b36 0,transparent 28rem),var(--bg);min-height:100vh}
-.wrap{width:min(1000px,calc(100% - 40px));margin:auto;padding:54px 0 70px}
-.eyebrow{color:var(--green);font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:700}
-.hero{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:32px}
-.hero h1{font:700 clamp(34px,6vw,64px)/.95 Georgia,serif;letter-spacing:-.06em;margin:10px 0 12px}
-.hero h1 span{color:var(--violet)}
-.intro{color:var(--muted);max-width:680px;margin:0}
-.status{border:1px solid #60f2ba55;color:var(--green);border-radius:999px;padding:8px 14px;font-size:12px;white-space:nowrap;background:#60f2ba0b}
-.status i{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 12px var(--green);margin-right:8px}
-.card{background:#111322dd;border:1px solid var(--line);box-shadow:var(--shadow);border-radius:18px;padding:24px;margin-bottom:16px}
-.card h2{font:700 25px/1.1 Georgia,serif;margin:0 0 12px}
-.card h2 span{color:var(--violet)}
-.card h3{font-size:16px;color:var(--green);margin:22px 0 7px}
-.card p,.card li{color:#d8daea}
-.card p{margin:8px 0}
-.card ul{padding-left:22px}
-.card li{margin:6px 0}
-.notice{border-left:3px solid var(--violet);background:var(--panel2);border-radius:10px;padding:14px 16px;margin-top:15px;color:#d8daea}
-.warning{border-left:3px solid var(--yellow)}
-.badge{display:inline-block;border:1px solid #9a7cff55;color:var(--violet);background:#9a7cff0b;border-radius:999px;padding:4px 9px;font-size:11px;margin:0 5px 5px 0}
-footer{color:var(--muted);text-align:center;font-size:12px;margin-top:28px}
-a{color:var(--green)}
-@media(max-width:600px){.wrap{width:min(100% - 26px,560px);padding-top:30px}.hero{display:block}.status{display:inline-block;margin-top:20px}.card{padding:19px}.card h2{font-size:22px}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de confidentialité — VVs Bot</title>
+    <style>
+        :root {
+            color-scheme: dark;
+            --bg: #0f1117;
+            --card: #171a23;
+            --text: #e8eaf0;
+            --muted: #a9afbf;
+            --accent: #7c5cff;
+            --border: #2a2f3d;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            background: var(--bg);
+            color: var(--text);
+            font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            line-height: 1.7;
+        }
+
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 42px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, .25);
+        }
+
+        h1,
+        h2,
+        h3 {
+            line-height: 1.25;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-top: 0;
+        }
+
+        h2 {
+            margin-top: 2.2rem;
+            padding-bottom: .45rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h3 {
+            margin-top: 1.6rem;
+        }
+
+        strong {
+            color: #fff;
+        }
+
+        a {
+            color: #9d8cff;
+        }
+
+        code {
+            padding: .15rem .4rem;
+            border-radius: 5px;
+            background: #0d0f15;
+            color: #d6ccff;
+        }
+
+        blockquote {
+            margin: 1.5rem 0;
+            padding: 1rem 1.2rem;
+            border-left: 4px solid var(--accent);
+            background: rgba(124, 92, 255, .08);
+            color: var(--muted);
+        }
+
+        li {
+            margin: .45rem 0;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid var(--border);
+            margin: 2rem 0;
+        }
+
+        @media (max-width:600px) {
+            body {
+                padding: 15px 10px;
+            }
+
+            main {
+                padding: 24px 18px;
+                border-radius: 12px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
 </head>
+
 <body>
-<main class="wrap">
+    <main>
+        <h1>Politique de confidentialit&eacute; &mdash; VVs Bot</h1>
+        <p><strong>Derni&egrave;re mise &agrave; jour : [20/09/2026]</strong></p>
+        <blockquote>Ce document n&apos;est pas un avis juridique professionnel. Il d&eacute;crit de bonne foi les</blockquote>
+        <blockquote>donn&eacute;es trait&eacute;es par le Bot et la mani&egrave;re dont elles sont utilis&eacute;es. Si le Bot sert un</blockquote>
+        <blockquote>public large ou europ&eacute;en, une relecture par un professionnel (notamment au regard du</blockquote>
+        <blockquote>RGPD) est recommand&eacute;e &mdash; en particulier concernant le stockage d&apos;identifiants VRChat</blockquote>
+        <blockquote>d&eacute;crit &agrave; la section 3.</blockquote>
+        <h2>1. Responsable du traitement</h2>
+        <p>Les donn&eacute;es d&eacute;crites ci-dessous sont trait&eacute;es par <strong>[Faolan]</strong>, d&eacute;veloppeur et</p>
+        <p>op&eacute;rateur du bot Discord <strong>VVs Bot</strong>.</p>
+        <h2>2. Donn&eacute;es collect&eacute;es</h2>
+        <h3>a) Donn&eacute;es Discord</h3>
+        <ul>
+            <li>Identifiant Discord (ID) et, dans certains journaux, le tag/pseudonyme au moment de</li>
+        </ul>
+        <p>l&apos;action, des membres utilisant les commandes du Bot.</p>
+        <ul>
+            <li>Contenu des messages, uniquement pour :</li>
+        </ul>
+        <p>- calculer le gain d&apos;XP (longueur du message, sans stockage du texte lui-m&ecirc;me) ;</p>
+        <p>- d&eacute;tecter le d&eacute;clenchement d&apos;une commande personnalis&eacute;e configur&eacute;e par les</p>
+        <p>administrateurs du serveur.</p>
+        <p>Le contenu des messages n&apos;est pas conserv&eacute; au-del&agrave; du traitement imm&eacute;diat.</p>
+        <ul>
+            <li>Temps pass&eacute; en salon vocal (en minutes), pour le calcul de l&apos;XP.</li>
+            <li>Historique des sanctions Discord appliqu&eacute;es via le Bot (kick, ban, timeout,</li>
+        </ul>
+        <p>avertissement) : identifiant de la cible, du mod&eacute;rateur, raison, date.</p>
+        <ul>
+            <li>Statistiques d&apos;activit&eacute; agr&eacute;g&eacute;es par serveur (messages/heure, jour, utilisateurs</li>
+        </ul>
+        <p>actifs) &agrave; des fins d&apos;affichage dans le Dashboard.</p>
+        <h3>b) Donn&eacute;es de comptes VRChat</h3>
+        <p>Lorsqu&apos;un mod&eacute;rateur connecte un compte VRChat au Bot (<code>/login</code>), sont stock&eacute;es :</p>
+        <ul>
+            <li>le nom d&apos;utilisateur et le <strong>mot de passe VRChat</strong>, tels que fournis ;</li>
+            <li>le cookie de session (et, le cas &eacute;ch&eacute;ant, le jeton de double authentification)</li>
+        </ul>
+        <p>r&eacute;sultant de la connexion &agrave; l&apos;API VRChat ;</p>
+        <ul>
+            <li>l&apos;adresse e-mail associ&eacute;e, sous forme masqu&eacute;e telle que renvoy&eacute;e par VRChat</li>
+        </ul>
+        <p>(ex. <code>f****@gmail.com</code>) ;</p>
+        <ul>
+            <li>l&apos;identifiant Discord de la personne ayant enregistr&eacute; le compte, et la date</li>
+        </ul>
+        <p>d&apos;enregistrement.</p>
+        <p><strong>Ces donn&eacute;es sont n&eacute;cessaires au fonctionnement du Bot</strong> : il doit pouvoir s&apos;authentifier</p>
+        <p>en tant que ce compte pour surveiller le groupe VRChat et y appliquer des actions de</p>
+        <p>mod&eacute;ration demand&eacute;es depuis Discord. Le mot de passe est conserv&eacute; afin de permettre une</p>
+        <p>reconnexion automatique si la session expire.</p>
+        <h3>c) Donn&eacute;es de mod&eacute;ration VRChat</h3>
+        <ul>
+            <li>Identifiant VRChat (<code>usr_...</code>) et pseudonyme des membres VRChat kick&eacute;/avertis/bannis</li>
+        </ul>
+        <p>du groupe surveill&eacute;.</p>
+        <ul>
+            <li>Action appliqu&eacute;e, raison indiqu&eacute;e, pseudonyme du mod&eacute;rateur VRChat &agrave; l&apos;origine de</li>
+        </ul>
+        <p>l&apos;action, et date.</p>
+        <ul>
+            <li>Pour les bannissements du groupe principal : ces informations sont **publi&eacute;es</li>
+        </ul>
+        <p>publiquement** sur le Site des bannis (voir section 5).</p>
+        <h3>d) Donn&eacute;es de la fonctionnalit&eacute; IA</h3>
+        <ul>
+            <li>Le contenu des questions envoy&eacute;es via la commande <code>/ia</code> est transmis &agrave; un prestataire</li>
+        </ul>
+        <p>tiers de g&eacute;n&eacute;ration de texte (API compatible OpenAI) pour obtenir une r&eacute;ponse.</p>
+        <ul>
+            <li>Le nombre de requ&ecirc;tes, le nombre de tokens consomm&eacute;s et le co&ucirc;t estim&eacute; sont enregistr&eacute;s</li>
+        </ul>
+        <p>par serveur, &agrave; des fins de suivi budg&eacute;taire et de quota. Le contenu exact des questions</p>
+        <p>n&apos;est pas conserv&eacute; par le Bot au-del&agrave; du traitement de la requ&ecirc;te, mais peut transiter</p>
+        <p>et &ecirc;tre conserv&eacute; selon la politique propre du prestataire tiers.</p>
+        <h3>e) Donn&eacute;es du Dashboard web</h3>
+        <ul>
+            <li>Un identifiant et un mot de passe uniques, d&eacute;finis par l&apos;administrateur du Bot,</li>
+        </ul>
+        <p>prot&egrave;gent l&apos;acc&egrave;s au Dashboard (authentification basique). Ces identifiants ne sont</p>
+        <p>pas li&eacute;s &agrave; un compte Discord individuel.</p>
+        <ul>
+            <li>Un cookie de session technique peut &ecirc;tre utilis&eacute; pour maintenir la connexion au</li>
+        </ul>
+        <p>Dashboard.</p>
+        <h3>f) Donn&eacute;es d&apos;abonnement premium</h3>
+        <ul>
+            <li>Statut premium/exempt&eacute;/gratuit par serveur Discord, date d&apos;expiration &eacute;ventuelle, et</li>
+        </ul>
+        <p>note libre laiss&eacute;e par l&apos;&Eacute;diteur (ex. motif d&apos;exemption).</p>
+        <h2>3. Finalit&eacute;s du traitement</h2>
+        <p>Les donn&eacute;es ci-dessus sont utilis&eacute;es exclusivement pour :</p>
+        <ul>
+            <li>assurer le fonctionnement des commandes de mod&eacute;ration Discord et VRChat ;</li>
+            <li>authentifier et maintenir la connexion des comptes VRChat au Bot ;</li>
+            <li>calculer et afficher l&apos;XP, les niveaux et le classement communautaire ;</li>
+            <li>afficher des statistiques d&apos;activit&eacute; aux administrateurs via le Dashboard ;</li>
+            <li>publier la liste des membres bannis du groupe VRChat principal ;</li>
+            <li>fournir la fonctionnalit&eacute; IA et en limiter l&apos;usage selon les quotas d&eacute;finis ;</li>
+            <li>assurer la s&eacute;curit&eacute; et le bon fonctionnement technique du Bot (journaux d&apos;erreurs).</li>
+        </ul>
+        <p>Aucune donn&eacute;e n&apos;est vendue, lou&eacute;e ou utilis&eacute;e &agrave; des fins publicitaires.</p>
+        <h2>4. Base l&eacute;gale du traitement</h2>
+        <p>Le traitement repose selon les cas sur :</p>
+        <ul>
+            <li>l&apos;<strong>ex&eacute;cution d&apos;un service demand&eacute;</strong> par l&apos;utilisateur ou les administrateurs du</li>
+        </ul>
+        <p>serveur (connexion d&apos;un compte VRChat, usage des commandes) ;</p>
+        <ul>
+            <li>l&apos;<strong>int&eacute;r&ecirc;t l&eacute;gitime</strong> de l&apos;&Eacute;diteur et des administrateurs de serveur &agrave; assurer la</li>
+        </ul>
+        <p>mod&eacute;ration et la s&eacute;curit&eacute; de leurs communaut&eacute;s (historique de sanctions, anti-spam) ;</p>
+        <ul>
+            <li>le <strong>consentement</strong> de l&apos;utilisateur pour les fonctionnalit&eacute;s optionnelles (connexion</li>
+        </ul>
+        <p>d&apos;un compte VRChat, usage de <code>/ia</code>).</p>
+        <h2>5. Destinataires et partage des donn&eacute;es</h2>
+        <ul>
+            <li><strong>VRChat Inc.</strong> : les identifiants du compte connect&eacute; sont transmis &agrave; l&apos;API officielle</li>
+        </ul>
+        <p>de VRChat pour l&apos;authentification et les actions de mod&eacute;ration demand&eacute;es.</p>
+        <ul>
+            <li><strong>Prestataire IA tiers</strong> (API compatible OpenAI, ex. Mammouth) : re&ccedil;oit le contenu des</li>
+        </ul>
+        <p>requ&ecirc;tes envoy&eacute;es via <code>/ia</code>, selon sa propre politique de confidentialit&eacute;.</p>
+        <ul>
+            <li><strong>GitHub / GitHub Pages</strong> : les informations relatives aux bannissements du groupe</li>
+        </ul>
+        <p>VRChat principal (pseudonyme, identifiant VRChat, date, raison, mod&eacute;rateur, avatar) sont</p>
+        <p>publi&eacute;es publiquement sur un d&eacute;p&ocirc;t GitHub et un site GitHub Pages accessibles &agrave; toute</p>
+        <p>personne disposant du lien.</p>
+        <ul>
+            <li>Aucune autre donn&eacute;e n&apos;est transmise &agrave; des tiers en dehors de ces cas, sauf obligation</li>
+        </ul>
+        <p>l&eacute;gale.</p>
+        <h2>6. Dur&eacute;e de conservation</h2>
+        <ul>
+            <li><strong>Comptes VRChat</strong> : conserv&eacute;s tant qu&apos;ils restent enregistr&eacute;s sur le Bot ; supprim&eacute;s</li>
+        </ul>
+        <p>sur demande (<code>/logout</code>) ou sur demande de l&apos;utilisateur aupr&egrave;s de l&apos;&Eacute;diteur.</p>
+        <ul>
+            <li><strong>Historique de mod&eacute;ration Discord/VRChat</strong> : conserv&eacute; sans limite de dur&eacute;e d&eacute;finie par</li>
+        </ul>
+        <p>d&eacute;faut, sauf purge manuelle par un mod&eacute;rateur (<code>/logs-vider</code>, <code>/vrc-logs-purger</code>) ou</p>
+        <p>suppression cibl&eacute;e d&apos;une entr&eacute;e. Les bannissements VRChat restent visibles tant qu&apos;ils</p>
+        <p>ne sont pas lev&eacute;s.</p>
+        <ul>
+            <li><strong>Statistiques d&apos;XP et d&apos;activit&eacute;</strong> : conserv&eacute;es tant que le membre reste actif sur le</li>
+        </ul>
+        <p>serveur ; r&eacute;initialisables &agrave; tout moment par un mod&eacute;rateur (<code>/xp-reset</code>).</p>
+        <ul>
+            <li><strong>Journaux d&apos;usage IA</strong> : conserv&eacute;s &agrave; des fins de suivi budg&eacute;taire, sans limite de</li>
+        </ul>
+        <p>dur&eacute;e d&eacute;finie par d&eacute;faut.</p>
+        <ul>
+            <li><strong>Donn&eacute;es du Dashboard</strong> : les identifiants d&apos;acc&egrave;s sont conserv&eacute;s tant que le service</li>
+        </ul>
+        <p>web est actif.</p>
+        <h2>7. S&eacute;curit&eacute;</h2>
+        <p>L&apos;&Eacute;diteur met en &oelig;uvre des mesures raisonnables pour prot&eacute;ger les donn&eacute;es stock&eacute;es</p>
+        <p>(acc&egrave;s restreint au serveur h&eacute;bergeant le Bot, authentification sur le Dashboard).</p>
+        <p>Cependant, aucun syst&egrave;me n&apos;est infaillible. En particulier, les identifiants VRChat</p>
+        <p>(y compris le mot de passe) &eacute;tant stock&eacute;s pour assurer le fonctionnement du Bot, un acc&egrave;s</p>
+        <p>non autoris&eacute; au serveur d&apos;h&eacute;bergement pourrait exposer ces informations. Les</p>
+        <p>administrateurs du Bot sont invit&eacute;s &agrave; :</p>
+        <ul>
+            <li>restreindre l&apos;acc&egrave;s physique et r&eacute;seau au serveur h&eacute;bergeant le Bot ;</li>
+            <li>utiliser des comptes VRChat d&eacute;di&eacute;s &agrave; la mod&eacute;ration plut&ocirc;t que des comptes personnels ;</li>
+            <li>changer le mot de passe du compte VRChat concern&eacute; en cas de doute sur une compromission.</li>
+        </ul>
+        <h2>8. Droits des utilisateurs</h2>
+        <p>Toute personne concern&eacute;e par les donn&eacute;es d&eacute;crites ci-dessus peut demander, en contactant</p>
+        <p>l&apos;&Eacute;diteur (voir section 1) ou un mod&eacute;rateur du serveur concern&eacute; :</p>
+        <ul>
+            <li>l&apos;<strong>acc&egrave;s</strong> aux donn&eacute;es la concernant conserv&eacute;es par le Bot ;</li>
+            <li>la <strong>rectification</strong> d&apos;une information erron&eacute;e (ex. raison d&apos;un avertissement) ;</li>
+            <li>la <strong>suppression</strong> de son compte VRChat li&eacute;, de son historique de mod&eacute;ration, ou de ses</li>
+        </ul>
+        <p>statistiques d&apos;XP ;</p>
+        <ul>
+            <li>une explication sur le fonctionnement du traitement IA la concernant.</li>
+        </ul>
+        <p>Les demandes concernant un bannissement VRChat publi&eacute; sur le Site des bannis peuvent &ecirc;tre</p>
+        <p>adress&eacute;es aux mod&eacute;rateurs du groupe VRChat concern&eacute; ou &agrave; l&apos;&Eacute;diteur.</p>
+        <h2>9. Mineurs</h2>
+        <p>Le Bot n&apos;est pas destin&eacute; aux personnes n&apos;ayant pas l&apos;&acirc;ge minimum requis par Discord et</p>
+        <p>VRChat pour utiliser leurs services respectifs. L&apos;&Eacute;diteur ne collecte pas sciemment de</p>
+        <p>donn&eacute;es concernant des mineurs en dessous de cet &acirc;ge minimum.</p>
+        <h2>10. Cookies et traceurs</h2>
+        <p>Le Dashboard utilise un cookie de session technique n&eacute;cessaire &agrave; l&apos;authentification. Ce</p>
+        <p>cookie n&apos;est pas utilis&eacute; &agrave; des fins publicitaires ou de suivi.</p>
+        <h2>11. Modifications de cette politique</h2>
+        <p>Cette politique peut &ecirc;tre mise &agrave; jour &agrave; tout moment ; la version applicable est celle</p>
+        <p>publi&eacute;e sur ce d&eacute;p&ocirc;t GitHub, &agrave; la date indiqu&eacute;e en en-t&ecirc;te.</p>
+        <h2>12. Contact</h2>
+        <p>Pour toute question ou demande relative &agrave; cette politique de confidentialit&eacute; :</p>
+        <p><strong>[TON EMAIL / CONTACT DISCORD]</strong></p>
+        <hr>
+        <p>Voir &eacute;galement les <a href="./CONDITIONS_UTILISATION.md">Conditions d&apos;utilisation</a>.</p>
+    </main>
 
-<header class="hero">
-  <div>
-    <div class="eyebrow">VVs / confidentialité</div>
-    <h1>Privacy <span>Policy</span></h1>
-    <p class="intro">Politique de confidentialité de Virtual Vibes. Cette page explique quelles informations peuvent être traitées par le bot, pourquoi elles sont utilisées et dans quelles situations elles peuvent être publiées.</p>
-  </div>
-  <div class="status"><i></i>Document officiel</div>
-</header>
-
-<section class="card">
-  <h2>🔐 Politique de <span>confidentialité</span></h2>
-  <p>La présente politique concerne le bot Discord <strong>Virtual Vibes</strong> (« VVs Bot »).</p>
-  <div class="notice"><strong>Dernière mise à jour :</strong> 21 août 2026</div>
-</section>
-
-<section class="card">
-  <h2>1. <span>Informations traitées</span></h2>
-  <h3>Discord</h3>
-  <p>Pour fonctionner, le bot peut traiter des identifiants techniques Discord, notamment l'identifiant de l'utilisateur ayant effectué une action et l'identifiant du serveur concerné.</p>
-  <p>Le bot utilise également les informations nécessaires à ses fonctionnalités de modération, de gestion et de configuration des serveurs.</p>
-
-  <h3>VRChat</h3>
-  <p>Lorsque les fonctionnalités VRChat sont utilisées, le bot peut traiter le nom d'utilisateur VRChat, l'identifiant du compte et certaines informations fournies par l'API VRChat.</p>
-
-  <h3>Modération</h3>
-  <p>Les fonctionnalités de modération peuvent enregistrer des informations telles que la cible d'une action, le motif, la date, le modérateur à l'origine de l'action et les informations nécessaires à l'historique de modération.</p>
-</section>
-
-<section class="card">
-  <h2>2. <span>Connexion à VRChat</span></h2>
-  <p>La commande <strong>/login</strong> permet à un utilisateur autorisé de connecter un compte VRChat au bot. Le fonctionnement actuel prévoit également une étape 2FA lorsque VRChat la demande.</p>
-  <p>Une session VRChat et les informations techniques nécessaires à son maintien peuvent être conservées afin de permettre au bot de poursuivre ses fonctionnalités de surveillance et de gestion.</p>
-  <div class="notice warning"><strong>Important :</strong> ne transmettez jamais vos identifiants VRChat au bot si vous ne souhaitez pas lui permettre d'utiliser les fonctionnalités nécessitant cette connexion. Le bot doit être utilisé uniquement par des personnes autorisées à connecter le compte concerné.</div>
-</section>
-
-<section class="card">
-  <h2>3. <span>Pourquoi ces données sont-elles utilisées ?</span></h2>
-  <ul>
-    <li>Associer une action à l'utilisateur Discord qui l'a effectuée.</li>
-    <li>Associer un compte VRChat à un serveur ou à une configuration.</li>
-    <li>Permettre la surveillance et la récupération d'informations depuis VRChat.</li>
-    <li>Gérer les actions de modération et leur historique.</li>
-    <li>Relayer certaines informations VRChat vers les salons Discord configurés.</li>
-    <li>Maintenir les fonctionnalités et la configuration du bot.</li>
-  </ul>
-</section>
-
-<section class="card">
-  <h2>4. <span>Publication des données</span></h2>
-  <p>Le bot peut publier certaines informations de modération sur un dépôt GitHub utilisé pour le site de consultation des bannissements.</p>
-  <p>Selon les données enregistrées par le système, cette publication peut notamment contenir un nom ou identifiant VRChat, une raison, une date, un modérateur, un avatar et des statistiques liées à la modération.</p>
-  <div class="notice"><strong>À retenir :</strong> les informations publiées sur une page GitHub Pages publique peuvent être accessibles à toute personne disposant du lien ou trouvant la page.</div>
-</section>
-
-<section class="card">
-  <h2>5. <span>Services tiers</span></h2>
-  <p>Virtual Vibes fonctionne avec plusieurs services externes nécessaires à certaines fonctionnalités :</p>
-  <ul>
-    <li><strong>Discord</strong> — plateforme sur laquelle le bot fonctionne.</li>
-    <li><strong>VRChat</strong> — source des fonctionnalités et informations VRChat utilisées par le bot.</li>
-    <li><strong>GitHub / GitHub Pages</strong> — hébergement du site et, selon la configuration, publication de certaines informations de modération.</li>
-  </ul>
-  <p>Ces services disposent de leurs propres règles et politiques de confidentialité.</p>
-</section>
-
-<section class="card">
-  <h2>6. <span>Conservation et suppression</span></h2>
-  <p>Les données sont conservées aussi longtemps que nécessaire au fonctionnement des fonctionnalités auxquelles elles sont associées, sous réserve des capacités techniques du bot et de sa base de données.</p>
-  <p>Lorsqu'une fonction de déconnexion ou de suppression prévue par le bot est utilisée, les informations associées peuvent être retirées de la configuration correspondante.</p>
-  <p>La suppression d'une information déjà publiée sur un service tiers peut nécessiter une suppression séparée sur ce service.</p>
-</section>
-
-<section class="card">
-  <h2>7. <span>Sécurité</span></h2>
-  <p>Des mesures techniques sont utilisées pour limiter l'accès aux données et aux fonctionnalités sensibles. Cependant, aucun système informatique ne peut garantir une sécurité absolue.</p>
-  <p>Les personnes administrant le bot doivent notamment protéger les secrets, tokens, identifiants et fichiers de configuration utilisés par le bot.</p>
-</section>
-
-<section class="card">
-  <h2>8. <span>Droits et demandes</span></h2>
-  <p>Pour toute demande concernant des données associées à Virtual Vibes, leur utilisation ou leur suppression, contactez l'équipe responsable du bot via ses moyens de contact officiels.</p>
-  <p>Pour faciliter une demande, indiquez si possible votre identifiant Discord ou VRChat et expliquez précisément les informations concernées.</p>
-</section>
-
-<section class="card">
-  <h2>9. <span>Modifications</span></h2>
-  <p>Cette politique peut être modifiée lorsque le fonctionnement du bot, les services utilisés ou les pratiques de traitement des données évoluent.</p>
-  <p>La date de dernière mise à jour affichée en haut de la page permet d'identifier la version actuellement publiée.</p>
-</section>
-
-<section class="card">
-  <h2>10. <span>Contact</span></h2>
-  <p>Pour toute question concernant cette politique ou les données traitées par Virtual Vibes, contactez l'équipe du projet via les moyens de contact officiels de Virtual Vibes.</p>
-  <span class="badge">Virtual Vibes</span>
-  <span class="badge">Discord</span>
-  <span class="badge">VRChat</span>
-  <span class="badge">GitHub Pages</span>
-</section>
-
-<footer>Virtual Vibes — Politique de confidentialité · Dernière mise à jour : 21/08/2026</footer>
-</main>
+<div style="bottom: 10px; right: 10px; position: absolute;"><a href="https://wordtohtml.net/?utm_source=wth_free_link&utm_medium=external" target="_blank" style="font-size:11px; color: #d0d0d0;">Convertir rapidement un document Word ou PDF en HTML propre</a></div>
 </body>
+
 </html>
