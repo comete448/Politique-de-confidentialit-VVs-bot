@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Politique de confidentialité — VVs Bot</title>
+<meta name="description" content="Quelles données VVs Bot utilise, pourquoi, combien de temps, et comment les faire supprimer.">
+<meta name="theme-color" content="#04070f">
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+:root{--bg:#04070f;--panel:#0a1120;--panel2:#0f1830;--line:#18233f;--text:#eef3ff;--muted:#8d9bbd;--blue:#5b8cff;--cyan:#bcd2ff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--cyan);text-decoration:none}a:hover{color:#fff;text-decoration:underline}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+/* bandeau : l'image du thème VVs, fondue vers le fond noir */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero::before{content:'';position:absolute;inset:0;background:url(banner.webp) center 40%/cover no-repeat;opacity:.55}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,#04070f99 0%,#04070f55 40%,var(--bg) 100%),linear-gradient(90deg,#04070fcc 0%,transparent 60%)}
+.hero>*{position:relative;z-index:1}
+header{padding:22px 0}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:10px;color:#fff;font-weight:700;font-size:18px}.logo img{height:46px;width:auto;display:block;filter:drop-shadow(0 0 14px #5b8cff88)}
+.pill{display:inline-block;padding:5px 13px;border-radius:99px;border:1px solid #2b3b63;background:#0a112099;color:var(--cyan);font-size:13px;backdrop-filter:blur(6px)}
+.hero-body{padding:46px 0 64px}
+h1{font-size:clamp(34px,6vw,56px);line-height:1.05;margin:0 0 14px;letter-spacing:-.02em}
+h1 em{font-style:normal;background:linear-gradient(90deg,#fff,#7fa6ff);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 0 40px #5b8cff55}
+.lead{color:#c9d5f2;font-size:18px;max-width:640px;margin:0}
+.summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:34px 0 30px}
+.summary div{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;transition:border-color .2s,transform .2s}
+.summary div:hover{border-color:var(--blue);transform:translateY(-2px)}
+.summary b{display:block;color:var(--cyan);margin-bottom:4px}.summary span{color:var(--muted);font-size:14.5px}
+nav.toc{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 20px;margin-bottom:12px}
+nav.toc b{display:block;margin-bottom:6px;color:var(--cyan)}nav.toc ol{margin:0;padding-left:20px;columns:2;column-gap:30px;font-size:15px}
+@media(max-width:640px){nav.toc ol{columns:1}}
+h2{font-size:23px;margin:42px 0 8px;padding-top:6px;scroll-margin-top:14px;display:flex;align-items:baseline;gap:10px}
+h2 span{color:var(--blue);font-weight:800}
+h2::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent);align-self:center}
+p,li{color:#dbe4fb}ul{padding-left:22px}li{margin:6px 0}
+b{color:#fff}
+table{width:100%;border-collapse:collapse;margin:14px 0;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:15px}
+th,td{padding:11px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+th{color:var(--cyan);font-size:13px;text-transform:uppercase;letter-spacing:.06em;background:var(--panel2)}tr:last-child td{border-bottom:0}
+td:first-child{color:#fff;font-weight:600;white-space:nowrap}
+@media(max-width:640px){td:first-child{white-space:normal}}
+.note{background:#5b8cff14;border:1px solid #5b8cff66;border-radius:12px;padding:14px 16px;margin:16px 0}
+footer{margin-top:60px;padding:26px 0 50px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<div class="hero">
+<header><div class="wrap"><a class="logo" href="#"><img src="logo.png" alt="VVs"><span>Bot</span></a><span class="pill">Dernière mise à jour : 19 octobre 2026</span></div></header>
+<div class="wrap hero-body">
+<h1>Politique de <em>confidentialité</em></h1>
+<p class="lead">VVs Bot est un bot Discord (modération, niveaux, tickets, musique, sondages…) qui fonctionne aussi avec VRChat. Cette page explique simplement quelles données il utilise, pourquoi, combien de temps, et comment les faire supprimer.</p>
+</div></div>
+<main class="wrap">
+<div class="summary">
+<div><b>Peu de données</b><span>Seulement ce qui sert aux fonctions activées sur ton serveur.</span></div>
+<div><b>Pas d'e-mail, pas de MP</b><span>Le dashboard ne lit pas tes messages privés et ne te demande pas ton e-mail.</span></div>
+<div><b>Pas de revente</b><span>Aucune donnée n'est vendue, louée ni utilisée pour de la publicité.</span></div>
+<div><b>Tu gardes la main</b><span>Retrait d'un anniversaire, suppression sur demande, bot retirable à tout moment.</span></div>
+</div>
+
+<nav class="toc"><b>Sommaire</b><ol>
+<li><a href="#qui">Qui est responsable</a></li>
+<li><a href="#dashboard">Connexion au dashboard</a></li>
+<li><a href="#donnees">Données enregistrées par le bot</a></li>
+<li><a href="#vrchat">Comptes et données VRChat</a></li>
+<li><a href="#journaux">Journaux dans Discord</a></li>
+<li><a href="#externes">Services externes</a></li>
+<li><a href="#duree">Durée de conservation</a></li>
+<li><a href="#droits">Tes droits et suppression</a></li>
+<li><a href="#securite">Sécurité</a></li>
+<li><a href="#enfants">Mineurs</a></li>
+<li><a href="#modifs">Modifications</a></li>
+<li><a href="#contact">Contact</a></li>
+</ol></nav>
+
+<h2 id="qui"><span>1.</span> Qui est responsable</h2>
+<p>VVs Bot est édité et hébergé par son propriétaire (« nous »). Les administrateurs de chaque serveur Discord choisissent les modules qu'ils activent : ils décident donc de ce qui est enregistré sur leur serveur, dans les limites décrites ci-dessous.</p>
+
+<h2 id="dashboard"><span>2.</span> Connexion au dashboard</h2>
+<p>Quand tu te connectes avec Discord, nous demandons uniquement deux autorisations :</p>
+<ul>
+<li><b>identify</b> : ton identifiant, ton pseudo et ton avatar ;</li>
+<li><b>guilds</b> : la liste des serveurs où tu es, avec tes permissions.</li>
+</ul>
+<p>Elles servent à une seule chose : te montrer les serveurs que tu peux gérer.</p>
+<ul>
+<li>Nous <b>ne demandons pas ton adresse e-mail</b> et nous ne pouvons <b>ni lire tes messages privés, ni envoyer de messages à ta place</b>.</li>
+<li>Le jeton d'accès Discord n'est <b>pas conservé</b> : il sert au moment de la connexion puis est oublié.</li>
+<li>Ton identité et la liste de tes serveurs sont gardées dans une session côté serveur pendant <b>24 heures au plus</b> (cookie de session sécurisé), puis supprimées. Se déconnecter les efface immédiatement.</li>
+</ul>
+
+<h2 id="donnees"><span>3.</span> Données enregistrées par le bot sur un serveur</h2>
+<p>Selon les modules activés par les administrateurs, le bot enregistre :</p>
+<table>
+<tr><th>Fonction</th><th>Données</th></tr>
+<tr><td>Configuration</td><td>Réglages des modules : salons, rôles, textes, couleurs.</td></tr>
+<tr><td>Niveaux</td><td>Identifiant du membre, XP, niveau, nombre de messages, minutes passées en vocal. Des statistiques d'activité globales (messages par jour et par heure, membres actifs) sont aussi comptées.</td></tr>
+<tr><td>Tickets</td><td>Identifiant du membre, catégorie, sujet, et le <b>transcript</b> de la conversation (messages, pièces jointes sous forme de liens) enregistré à la fermeture.</td></tr>
+<tr><td>Invitations</td><td>Qui a rejoint, quelle invitation a été utilisée et par qui, date de création du compte, date de départ.</td></tr>
+<tr><td>Modération</td><td>Sanctions, avertissements et journal de modération du serveur (action, membre, modérateur, raison, date).</td></tr>
+<tr><td>Anniversaires</td><td>Uniquement le <b>jour et le mois</b> que tu enregistres toi-même (jamais l'année), visibles des membres du serveur tant que le module est activé.</td></tr>
+<tr><td>Sondages</td><td>Question, réponses et, pour chaque vote, l'identifiant du membre et sa réponse (pour pouvoir changer ou retirer son vote). Les votes ne sont jamais affichés nominativement.</td></tr>
+<tr><td>Suggestions</td><td>Texte, auteur, votes (identifiant et sens du vote, jamais affichés nominativement), réponse du staff.</td></tr>
+<tr><td>Starboard</td><td>Quand un message reçoit assez de réactions, son texte, son image et son auteur sont <b>recopiés</b> dans le salon du starboard choisi par les administrateurs. Les salons privés et NSFW sont ignorés par défaut.</td></tr>
+<tr><td>Jeux, giveaways, captcha</td><td>Victoires et parties jouées ; participants aux concours ; arrivées en attente de vérification.</td></tr>
+<tr><td>Annonces de streams</td><td>Les chaînes YouTube et Twitch suivies par le serveur et le salon d'annonce.</td></tr>
+<tr><td>Sauvegardes de serveur</td><td>Structure du serveur (rôles, salons, permissions, emojis). <b>Jamais de messages ni de membres.</b> Réservées au Gérant du serveur et aux personnes qu'il autorise.</td></tr>
+</table>
+<p>Le bot lit les messages d'un salon <b>uniquement pour les fonctions que l'administrateur a activées</b> (niveaux, commandes personnalisées, réaction de mots, AutoMod, jeux, starboard, journaux). Le contenu des messages n'est pas conservé en base de données, sauf dans les transcripts de tickets et les messages recopiés par le starboard.</p>
+
+<h2 id="vrchat"><span>4.</span> Comptes et données VRChat</h2>
+<p>Pour surveiller un groupe VRChat, un modérateur peut connecter un compte VRChat au bot. Dans ce cas :</p>
+<ul>
+<li>le nom d'utilisateur et le mot de passe du compte sont enregistrés, <b>le mot de passe étant chiffré</b> (AES-256) ; nous conseillons d'utiliser un <b>compte dédié</b> au bot ;</li>
+<li>le bot garde l'historique des actions de modération du groupe (kicks, avertissements, bannissements) et les arrivées et départs de membres du groupe suivi ;</li>
+<li>un compte peut être retiré à tout moment avec la commande de déconnexion du bot.</li>
+</ul>
+<p>Les journaux VRChat et les journaux Discord sont tenus <b>séparément</b> et ne sont jamais mélangés.</p>
+
+<h2 id="journaux"><span>5.</span> Journaux envoyés dans Discord</h2>
+<p>Le module Logs écrit des événements (messages supprimés ou modifiés, arrivées, rôles, salons, vocal…) dans des salons choisis par les administrateurs du serveur. Ces messages restent soumis aux règles de Discord et à celles du serveur concerné.</p>
+
+<h2 id="externes"><span>6.</span> Services externes</h2>
+<ul>
+<li><b>Discord</b> : le bot fonctionne sur la plateforme Discord, soumise à sa propre politique de confidentialité.</li>
+<li><b>YouTube et Twitch</b> : les annonces de streams n'envoient que l'identifiant de la chaîne suivie. Aucune donnée de membre n'est transmise.</li>
+<li><b>Musique</b> : le bot recherche des morceaux sur YouTube, SoundCloud, Spotify et Deezer à partir du texte ou du lien fourni.</li>
+<li><b>Images personnalisées</b> : les images de fond ou de bannière fournies par lien sont téléchargées par le bot pour fabriquer les images de bienvenue et les cartes de niveau.</li>
+<li><b>VRChat</b> : le bot communique avec l'interface de VRChat pour les comptes connectés.</li>
+</ul>
+<p>Aucune donnée n'est vendue, louée ni partagée à des fins publicitaires.</p>
+
+<h2 id="duree"><span>7.</span> Durée de conservation</h2>
+<ul>
+<li>Les données d'un serveur sont conservées <b>tant que le bot y est présent</b>.</li>
+<li>Le journal de modération Discord est <b>nettoyé automatiquement</b> : les entrées de plus de 365 jours sont supprimées (durée réglable par l'hébergeur).</li>
+<li>Des copies de sauvegarde de la base de données sont gardées quelques jours (7 copies au maximum, la plus ancienne étant remplacée).</li>
+<li>Les sessions du dashboard expirent au bout de 24 heures.</li>
+</ul>
+
+<h2 id="droits"><span>8.</span> Tes droits et suppression</h2>
+<p>Tu peux à tout moment :</p>
+<ul>
+<li>retirer ton <b>anniversaire</b> (commande du bot) ou retirer ton vote en recliquant dessus ;</li>
+<li>demander l'<b>accès</b> aux données qui te concernent, leur <b>correction</b> ou leur <b>suppression</b> en nous contactant (voir plus bas) ;</li>
+<li>en tant qu'administrateur, supprimer les sauvegardes, transcripts et réglages depuis le dashboard, ou <b>retirer le bot</b> du serveur.</li>
+</ul>
+<div class="note">Pour une demande de suppression, indique ton identifiant Discord et, si possible, le serveur concerné. Nous répondons dans un délai raisonnable, en général sous 30 jours.</div>
+
+<h2 id="securite"><span>9.</span> Sécurité</h2>
+<p>La connexion au dashboard passe par HTTPS ; chaque action vérifie tes permissions sur le serveur concerné ; les liens saisis par les utilisateurs sont contrôlés avant d'être utilisés ; les mots de passe de comptes VRChat sont chiffrés ; les sauvegardes de serveur sont réservées aux personnes que le Gérant autorise. Aucune sécurité n'est parfaite : en cas de problème, contacte-nous.</p>
+
+<h2 id="enfants"><span>10.</span> Mineurs</h2>
+<p>VVs Bot s'adresse aux utilisateurs de Discord, qui impose un âge minimum. Nous ne collectons pas sciemment de données auprès de personnes n'ayant pas l'âge requis par Discord ; si tu penses que c'est le cas, contacte-nous pour les faire supprimer.</p>
+
+<h2 id="modifs"><span>11.</span> Modifications</h2>
+<p>Cette politique peut évoluer quand de nouvelles fonctions sont ajoutées. La date de dernière mise à jour figure en haut de la page ; en cas de changement important, une annonce est faite sur le serveur de support.</p>
+
+<h2 id="contact"><span>12.</span> Contact</h2>
+<p>Pour toute question ou demande liée à tes données, contacte le propriétaire du bot sur le <b>serveur Discord de support</b> de VVs Bot : <a href="https://discord.gg/pPFE3XECK6" rel="noopener">https://discord.gg/pPFE3XECK6</a>. Ouvre un ticket ou écris à l'équipe en précisant ton identifiant Discord.</p>
+</main>
+<footer><div class="wrap">VVs Bot · Politique de confidentialité · Version du 19 octobre 2026</div></footer>
+</body>
+</html>
